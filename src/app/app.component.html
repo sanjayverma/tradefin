@@ -1,0 +1,148 @@
+<!--The whole content below can be removed with the new code.-->
+<!--<app-sidenav></app-sidenav>
+    <app-header>
+    </app-header>
+    <app-invoice>
+    </app-invoice>-->
+
+<md-sidenav-container class="">
+  <md-sidenav #sidenav class="sidebar-wrapper">
+    <!--  Nav List Starts  -->
+    <md-list class="nav-list">
+        <md-list-item  class="nav-list-item logo">
+            <a href="javascript:void(0);">
+                <img class="img-responsive" src="assets/images/logo.png" />
+                <span>TradeFin</span>
+            </a>
+        </md-list-item> 
+        <md-list-item  class="nav-list-item slider">
+            <div class="slider-wrapper">
+                <div class="slider-header">
+                    <a href="javascript:void(0);" class="btn btn-circle">BB</a>
+                    BB Corporation
+                    <a href="javascript:void(0);" class="dropdown-link">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </div>
+                <div class="slider-body">
+                     <md-progress-bar
+                        class="custom-progress-bar"
+                        [color]="color"
+                        [mode]="mode"
+                        [value]="100"
+                        [bufferValue]="bufferValue">
+                    </md-progress-bar>
+                    <p>
+                        <span>100% complete</span>
+                        <span>Edit</span>
+                    </p>
+                </div>
+            </div>
+        </md-list-item>
+        <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+               <i class="fa fa-building icon"></i>
+                <span>Business information</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+               <i class="fa fa-envelope icon"></i>
+                <span>Contact us</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-map-marker icon"></i>
+                <span>Addresses</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-credit-card icon"></i>
+                <span>Bank information</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+               <i class="fa fa-money icon"></i>
+                <span>Existing Loans</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-book icon"></i>
+                <span>KYC Documents</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item title">
+          <a href="javascript:void(0);">
+                <span>MAIN</span>
+            </a>
+        </md-list-item>
+         <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-bar-chart icon"></i>
+                <span>Purchase orders</span>
+            </a>
+        </md-list-item>
+        <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-bell icon"></i>
+                <span>Shipping notice</span>
+            </a>
+        </md-list-item>
+        <md-list-item  class="nav-list-item active">
+          <a href="javascript:void(0);">
+                <i class="fa fa-list-alt icon"></i>
+                <span>Invoices</span>
+            </a>
+        </md-list-item>
+        <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-cog icon"></i>
+                <span>Settings</span>
+            </a>
+        </md-list-item>
+        <md-list-item  class="nav-list-item">
+          <a href="javascript:void(0);">
+                <i class="fa fa-life-ring icon"></i>
+                <span>Help center</span>
+            </a>
+        </md-list-item>
+    </md-list>
+    <!--  Nav List Ends  -->
+  </md-sidenav>
+   <div class="example-sidenav-content main-wrapper">   
+    <md-nav-list class="header-wrapper">
+        <md-list-item class="visible-tablet logo-wrapper">
+              <a md-line href="javascript:void(0);" (click)="sidenav.open()">
+                  <span class="bar">&#9776;</span>
+             </a>
+              <img class="img-responsive" src="assets/images/logo.png" />
+              <span class="title">TradeFin</span>
+        </md-list-item>
+        <md-list-item>
+            <a md-line href="javascript:void(0);"><i class="fa fa-question-circle-o"></i></a>
+        </md-list-item>
+        <md-list-item>
+            <a md-line href="javascript:void(0);"><i class="fa fa-bell-o"></i></a>
+        </md-list-item>
+    </md-nav-list>
+    <section class="invoice-wrapper">
+        <div  class="invoice-header-wrapper">
+            <md-card>
+                <h2>Invoice</h2>
+                <span>Check your invoice</span>
+            </md-card>  
+            <md-card>
+                 <a md-raised-button href="javascript:void(0);"><i class="fa fa-filter"></i></a>
+                 <a md-raised-button href="javascript:void(0);">Add New</a>
+            </md-card>  
+        </div> 
+    </section>
+   <div class="table-responsive table-wrapper">
+        <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+    </div>
+  </div>
+</md-sidenav-container>

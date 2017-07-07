@@ -1,0 +1,274 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+/*--  Sans Francisco Text Light  --*/
+@font-face {
+    font-family:"sans-francisco-text-light";
+    src: url("assets/fonts/sans-francisco-text-light/sans-francisco-text-light.eot");
+    src: url("assets/fonts/sans-francisco-text-light/sans-francisco-text-light.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/sans-francisco-text-light/sans-francisco-text-light.woff") format("woff"),
+        url("assets/fonts/sans-francisco-text-light/sans-francisco-text-light.ttf") format("truetype"),
+        url("assets/fonts/sans-francisco-text-light/sans-francisco-text-light.svg#sans-francisco-text-light") format("svg"); 
+}
+
+/*--  Sans Francisco Text Regular  --*/
+@font-face {
+    font-family:"sans-francisco-text-regular";
+    src: url("assets/fonts/sans-francisco-text-regular/sans-francisco-text-regular.eot");
+    src: url("assets/fonts/sans-francisco-text-regular/sans-francisco-text-regular.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/sans-francisco-text-regular/sans-francisco-text-regular.woff") format("woff"),
+        url("assets/fonts/sans-francisco-text-regular/sans-francisco-text-regular.ttf") format("truetype"),
+        url("assets/fonts/sans-francisco-text-regular/sans-francisco-text-regular.svg#sans-francisco-text-regular") format("svg"); 
+}
+
+/*-- Lato Bold  --*/
+@font-face {
+    font-family:"lato-bold";
+    src: url("assets/fonts/lato-bold/lato-bold.eot");
+    src: url("assets/fonts/lato-bold/lato-bold.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/lato-bold/lato-bold.woff") format("woff"),
+        url("assets/fonts/lato-bold/lato-bold.ttf") format("truetype"),
+        url("assets/fonts/lato-bold/lato-bold.svg#lato-bold") format("svg"); 
+}
+
+/*-- Lato Regular  --*/
+@font-face {
+    font-family:"lato-regular";
+    src: url("assets/fonts/lato-regular/lato-regular.eot");
+    src: url("assets/fonts/lato-regular/lato-regular.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/lato-regular/lato-regular.woff") format("woff"),
+        url("assets/fonts/lato-regular/lato-regular.ttf") format("truetype"),
+        url("assets/fonts/lato-regular/lato-regular.svg#lato-regular") format("svg"); 
+}
+
+/*-- Lato Light  --*/
+@font-face {
+    font-family:"lato-light";
+    src: url("assets/fonts/lato-light/lato-light.eot");
+    src: url("assets/fonts/lato-light/lato-light.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/lato-light/lato-light.woff") format("woff"),
+        url("assets/fonts/lato-light/lato-light.ttf") format("truetype"),
+        url("assets/fonts/lato-light/lato-light.svg#lato-light") format("svg"); 
+}
+
+body {
+    margin: 0; 
+    font-family: Roboto, sans-serif; 
+}
+.mat-sidenav-container{
+    min-height: 900px;
+}
+a,a:hover,a:focus{
+    text-decoration: none !important;
+}
+md-card {
+    max-width: 80% ; 
+    margin: 2em auto; 
+    text-align: center; 
+}
+
+md-toolbar-row {
+    justify-content: space-between; 
+}
+
+.done {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    color: white; 
+}
+.mat-list .mat-list-item .mat-list-item-content, 
+.mat-nav-list .mat-list-item .mat-list-item-content {
+    height: auto ! important; 
+    padding: 0 ! important; 
+}
+.header-wrapper .mat-list-item .mat-list-item-ripple {
+    display: none; 
+}
+
+.table-wrapper table {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #606c71; 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    display: table; 
+    width: 100% ; 
+    max-width: 100%;
+    min-width: 1025px; 
+    overflow: auto; 
+    word-break: normal; 
+    table-layout: fixed;
+    word-break: keep-all;
+}
+.table-wrapper table tr th {
+    font-family: "sans-francisco-text-regular", sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0 !important;
+}
+.table-wrapper table tr th .sort{
+    display: inline-block;
+    position: relative;
+    display: block;
+    color: #425262;
+    padding: 8px 15px;
+    min-height: 86px;
+}
+.table-wrapper table tr th .asc::after,
+.table-wrapper table tr th .dsc::after{
+    content: "\F0DC" !important;
+    border: 0 !important;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #425262;
+    position: absolute;
+    font-weight: normal;
+    top: 8px;
+    right: 10px;
+}
+.table-wrapper table tr section {
+    font-size: 12px; 
+    font-weight: normal;
+}
+.table-wrapper table tr td, 
+.table-wrapper table tr th {
+    font-family: "Open Sans", sans - serif; 
+    font-size: 14px !important; 
+    margin: 0; 
+    border-bottom: 1px solid #EEF0F0;
+}
+.table-wrapper table tr td{
+    font-family: "lato-light", sans-serif;
+    text-transform: capitalize;
+    padding: 8px 15px;
+}
+.table-wrapper a.ng2-smart-sort-link, 
+.table-wrapper a.ng2-smart-action {
+    color: #425262; 
+    text-decoration: none;
+}
+.table-wrapper a.ng2-smart-sort-link:hover, 
+.table-wrapper a.ng2-smart-sort-link:focus, 
+.table-wrapper a.ng2-smart-action:hover, 
+.table-wrapper a.ng2-smart-action:focus {
+    color: #425262; 
+    text-decoration: none;
+}
+.table-wrapper .ng2-smart-pagination-nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination{
+    display: flex;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination{
+    display: flex;
+    margin: 15px 15px 30px 15px;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item .ng2-smart-page-link{
+    font-family: "lato-light", sans-serif;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    margin: 0 2px;
+    color: #425262;
+    position: relative;
+    border: 1px solid #979797;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item .ng2-smart-page-link:hover,
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item .ng2-smart-page-link:focus{
+    text-decoration: none;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item.disabled .ng2-smart-page-link{
+    color: #425262;
+    border: 1px solid #425262;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item .ng2-smart-page-link{
+    color: #838E98;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item.active .ng2-smart-page-link{
+    color: #425262;
+    border: 1px solid #425262;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item.disabled .ng2-smart-page-link{
+    color: #425262;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination 
+.ng2-smart-page-item:first-child .ng2-smart-page-link span,
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item:last-child .ng2-smart-page-link span{
+     display: none;
+ }
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination 
+.ng2-smart-page-item:first-child .ng2-smart-page-link::after,
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item:last-child .ng2-smart-page-link::after{ 
+    border: 0 !important;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 21px;
+    color: #425262;
+    position: absolute;
+    font-weight: normal;
+    top: 0;
+    right: 10px;
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination 
+.ng2-smart-page-item:first-child .ng2-smart-page-link::after{
+   content: "\f104";
+}
+.table-wrapper .ng2-smart-pagination-nav .ng2-smart-pagination
+ .ng2-smart-page-item:last-child .ng2-smart-page-link::after{
+   content: "\f105";
+ }
+
+/*--  Progress Bar Styles  --*/
+.mat-progress-bar-fill::after{
+    background-color: #10E564 !important;
+}
+
+
+
+
+
+/*--  Media Styles  --*/
+@media (min-width: 1024px) {
+    .mat-sidenav-transition .mat-sidenav-content {
+        width: calc(100%  - 250px); 
+        float: right; 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+    .table-wrapper table tr th,
+    .table-wrapper table tr td{
+        font-size: 12px !important;
+    }
+    .mat-sidenav-container{
+        min-height: 660px;
+    }
+    .mat-sidenav-container.mat-sidenav-opened{
+        min-height: 850px;
+    }
+}
